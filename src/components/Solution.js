@@ -3,11 +3,13 @@ import React, { Component } from 'react';
 
 
 class Solution extends Component {
+    
+    solution() {
+        return this.props.solution();
+    }
+
     render() {
-        let emptySol = ["_", "_","_","_"];
-        return (
-            emptySol.map(e=> <span>{e} </span>)
-        )
+      return this.solution();
     }
 }
 
