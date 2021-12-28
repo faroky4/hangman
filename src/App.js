@@ -64,11 +64,8 @@ class App extends Component {
           clickedLetter={this.clickedLetter}/>
       </div>
       ) : (
-      <div>
-        Game Over
-        <button onClick={() => window.location.reload()}>Play again?</button>
-      </div>
-    );
+        <div> game over </div>
+      )
   }
 
 }
